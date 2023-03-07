@@ -1,0 +1,20 @@
+Problem 1
+The code uses a binary search as it fits the required time complexity of O(log(n)). We divide the search space in two and check if the mid point squared is bigger or smaller than the number passed into the function. The square root of a number is half or less, thus giving us a speed boost by starting with end = number // 2. The space complexity is O(1) as its independent of the input as it solely relies on pointers to different array locations.
+
+Problem 2
+The code uses a binary search algorithm. Because its an algorithm based on binary search the time complexity is O(log(n)). The space complexity is O(1) as its independent of the input as it solely relies on pointers to different array locations.
+
+Problem 3
+The code uses a merge sort algorithm. We start saving the results in lists so we can sort and obtain a combination that satisfies the condition of having the max sum of the two numbers with only 1 digit difference in the size of the two arrays. The time complexity is O(n*log(n)). The space complexity is O(n) as we always will have arrays that amount to the length of the input array
+
+Problem 4
+We are able to do a single transversal with the use of 2 pointers. The time complexity is O(n). The space complexity is O(1)
+
+Problem 5
+The code uses a trie data structure which is derived from a tree, as it has a good balance of time and space complexity. The space complexity of searching and inserting from a trie depends on the length of the word that’s being searched /inserted (m) and the number of total words (n) thus the runtime is O(m * n).  The worst case time complexity would be O(n).
+
+Problem 6
+The code is able to use a single transversal thru the use of two placeholders min and max values. There is no need to sort the array. The time complexity is O(n). The space complexity is O(1) as it is independent from input size.
+
+Problem 7
+Similar to problem 5 with the main differences being the edge cases like "root handler" and working with a hierarchy of web pages instead of strings.  Once again the code uses a trie data structure which is derived from a tree, as it has a good balance of time and space complexity. The time complexity of searching and inserting from a trie depends on the length of the word that’s being searched /inserted and the number of total words (n) thus the runtime is O(n).  The worst case space complexity would be when we have a path (or paths), with no common folders between them which would result in a node for each path block therefore the space complexity is O(n).
